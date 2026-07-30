@@ -566,8 +566,6 @@ def create_shipping_zones():
         shipping_zone_name='America', countries=american_countries,
         shipping_methods_names=['DHL', 'UPS', 'FedEx'])
 
-
-
 def create_vouchers():
     voucher, created = Voucher.objects.get_or_create(
         code="FREESHIPPING",

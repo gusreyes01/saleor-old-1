@@ -461,9 +461,9 @@ DB_SEARCH_ENABLED = True
 
 # support deployment-dependant elastic environment variable
 ES_URL = (
-        os.environ.get("ELASTICSEARCH_URL")
-        or os.environ.get("SEARCHBOX_URL")
-        or os.environ.get("BONSAI_URL")
+    os.environ.get("ELASTICSEARCH_URL")
+    or os.environ.get("SEARCHBOX_URL")
+    or os.environ.get("BONSAI_URL")
 )
 
 ENABLE_SEARCH = bool(ES_URL) or DB_SEARCH_ENABLED  # global search disabling
@@ -503,7 +503,7 @@ SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
 
 # CELERY SETTINGS
 CELERY_BROKER_URL = (
-        os.environ.get("CELERY_BROKER_URL", os.environ.get("CLOUDAMQP_URL")) or ""
+    os.environ.get("CELERY_BROKER_URL", os.environ.get("CLOUDAMQP_URL")) or ""
 )
 CELERY_TASK_ALWAYS_EAGER = not CELERY_BROKER_URL
 CELERY_ACCEPT_CONTENT = ["json"]
