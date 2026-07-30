@@ -1,3 +1,10 @@
+> [!IMPORTANT]
+> This repository preserves a customized 2019-era Saleor application. It is
+> not the current Saleor product and is intentionally pinned to Python 3.7,
+> Django 2.2, and Node.js 10. Those runtimes are end-of-life. Review
+> [SECURITY.md](SECURITY.md) before deploying and
+> [CONTRIBUTING.md](CONTRIBUTING.md) before changing dependencies.
+
 ![github_saleor_readmew_header_01](https://user-images.githubusercontent.com/5421321/47800694-19bec680-dd2d-11e8-8625-2ed7c690bc13.jpg)
 
 <div align="center">
